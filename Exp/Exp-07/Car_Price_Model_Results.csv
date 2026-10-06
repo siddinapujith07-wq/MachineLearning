@@ -1,0 +1,4 @@
+Model,MAE,RMSE,R2
+Decision Tree,1.4191,1.8682,0.6173
+Bagging Regressor,1.1799,1.4421,0.7719
+Random Forest,1.1843,1.4369,0.7736

@@ -1,0 +1,40 @@
+EXPERIMENT-7 Random Forests — OOB Error, Bagging, and Feature Subsampling
+
+OBSERVATIONS
+
+1. The Car Price Prediction dataset was loaded successfully from CSV format, and its basic structure, data types, missing values, duplicate records, and statistical summary were examined.
+
+2. Exploratory Data Analysis was performed to study the distribution of Price_Lakhs and its relationship with numerical attributes such as Year, Mileage_km, Engine_CC, and Owners. Categorical attributes such as Brand, Fuel_Type, and Transmission were also examined.
+
+3. Price_Lakhs was selected as the target variable, making this a regression problem.
+
+4. A Decision Tree Regressor was implemented as the baseline model.
+
+5. Bagging was implemented using multiple Decision Trees trained on bootstrap samples of the training data. The predictions from individual trees were combined to obtain the final prediction.
+
+6. Bootstrap sampling demonstrated sampling with replacement. Therefore, some training observations could appear more than once, while some observations could be left out of a particular bootstrap sample.
+
+7. The observations left out of a bootstrap sample are called Out-of-Bag (OOB) observations. These observations can be used to estimate model performance.
+
+8. Random Forest was implemented using multiple decision trees, bootstrap sampling, and feature subsampling.
+
+9. Feature subsampling was used to introduce randomness between the decision trees and improve the diversity of the ensemble.
+
+10. The OOB score can be used as an R²-based estimate of Random Forest regression performance.
+
+11. OOB Error can be calculated as:
+    OOB Error = 1 - OOB Score
+
+12. Feature importance values were extracted from the trained Random Forest to identify the features that contributed most to car price prediction.
+
+13. Model performance was evaluated using RMSE, MAE, and R². These metrics were used to compare the Decision Tree, Bagging, and Random Forest models.
+
+14. The obtained results showed that Random Forest performed best, with an R² value of approximately 0.774, followed closely by Bagging with approximately 0.772.
+
+15. Feature importance analysis showed that Year was the most influential feature for predicting car price, followed by Mileage_km, Owners, and Engine_CC.
+
+16. The experiment successfully demonstrated Bagging, Bootstrap Sampling, Feature Subsampling, Random Forests, OOB evaluation, Feature Importance, and regression model comparison on the Car Price Prediction dataset.
+
+RESULT
+
+Random Forest regression was successfully implemented on the Car Price Prediction dataset, and its performance was evaluated using MAE, RMSE, R², and feature importance analysis.
